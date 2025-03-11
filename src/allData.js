@@ -15,7 +15,7 @@ export default function Alldata(){
 useEffect(() => {
 
     async function axiosProd(){
-        const response = await axios('https://bank-server-rc04.onrender.com/data');
+        const response = await axios.get('https://bank-server-rc04.onrender.com/data');
         setProducts(response.data)
     };
     axiosProd();
